@@ -1,8 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "build:schema": "tsup markdoc/config.ts --format cjs --target node16 --out-dir .markdoc-dist",
+    "watch:schema": "tsup markdoc/config.ts --watch --format cjs --target node16 --out-dir .markdoc-dist",
+    "dev": "npm run watch:schema & next dev",
+    "build": "npm run build:schema && next build",
     "start": "next start"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "tsup": "latest"
   }
 }

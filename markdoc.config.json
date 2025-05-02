@@ -1,0 +1,15 @@
+[
+  {
+    "id": "Markdocs POC",
+    "path": "pages",
+    "schema": {
+      "path": ".markdoc-dist/config.js",
+      "type": "node",
+      "property": "default",
+      "watch": true
+    },
+    "routing": {
+      "frontmatter": "route"
+    }
+  }
+]
