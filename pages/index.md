@@ -11,6 +11,8 @@ This is a full-featured boilerplate for a creating a documentation website using
 
 ## Setup
 
+{% feedback /%}
+
 First, clone this repo and install the dependencies required:
 
 ```bash

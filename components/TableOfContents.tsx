@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Feedback } from './Feedback';
 
 export function TableOfContents({toc}) {
   const items = toc.filter(
@@ -34,6 +35,7 @@ export function TableOfContents({toc}) {
           );
         })}
       </ul>
+      <Feedback />
       <style jsx>
         {`
           nav {
